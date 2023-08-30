@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css"/>
+   <link rel="stylesheet" href="./style.css">
+   
+
+
+
+</head>
+
+<body>
+ <header class="cabecalho">
+   <div class="conteiner">
+    <input type="checkbox" id="menu" class="conteiner__botao">
+    <label for="menu">
+    <span class="menuhamburger conteiner__imagem"></span>
+  </label>
+  <ul class="lista-menu">
+    <li class="lista-menu__titulo">Categorias</li>
+    <li class="lista-menu__item">
+      <a href="#" class="lista-menu__link">Programação</a>
+    </li>
+    <li class="lista-menu__item">
+      <a href="#" class="lista-menu__link">Front-end</a>
+    </li>
+    <li class="lista-menu__item">
+      <a href="#" class="lista-menu__link">Infraestrutura</a>
+    </li>
+    <li class="lista-menu__item">
+      <a href="#" class="lista-menu__link">Business</a>
+    </li>
+    <li class="lista-menu__item">
+      <a href="#" class="lista-menu__link">Design & UX</a>
+    </li>
+  </ul>
+
+
+
+    <img src="./Polygon 1 (Stroke).svg" alt="Logo Alurabooks" class="conteiner__imagem">
+   </div>
+   <div class="conteiner">
+    <a href="#"><img src="./Favoritos.svg" alt="Favoritos" class="conteiner__imagem" ></a>
+    <a href="#"><img src="./Compras.svg" alt="Compras" class="conteiner__imagem"></a>
+    <a href="#"><img src="./Usuario.svg" alt="Meu perfil" class="conteiner__imagem"></a>
+   </div>
+
+ </header>
+
+ <section class="banner">
+    <h2 class="banner__titulo">Já sabe por onde começar?</h2>
+    <p class="banner__texto">Encontre em nossa estante o que precisa para seu desenvolvimento</p>
+    <input type="search" class="banner__pesquisa" placeholder="Qual será sua próxima leitura?">
+ </section>
+
+ <section class="carrossel">
+    <h2 class="carrossel__titulo">Novos Lançamentos</h2>
+
+    <!-- Slider main container -->
+<div class="swiper">
+  <!-- Additional required wrapper -->
+  <!-- If we need pagination -->
+  <div class="swiper-pagination"></div>
+  
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="./ApacheKafka.svg" alt="Livro sobre apache Kafka"></div>
+    <div class="swiper-slide"><img src="./Javascript.svg" alt="Livro sobre JavaScript"></div>
+    <div class="swiper-slide"><img src="./Portugol.svg" alt="Livro sobre Portugol"></div>
+    <div class="swiper-slide"><img src="./Acessibilidade.svg" alt="Livro Acessibilidade"></div>
+    <div class="swiper-slide"><img src="./Angular.svg" alt="livro Angular"></div>
+    <div class="swiper-slide"><img src="./Arquitetura.svg" alt="Livro arquitetura"></div>
+    <div class="swiper-slide"><img src="./Construct2.svg" alt="livro Construct"></div>
+    <div class="swiper-slide"><img src="./Gestão.svg" alt="livro Gestão"></div>
+    <div class="swiper-slide"><img src="./Guia Front-end.svg" alt="livro Front-end"></div>
+    <div class="swiper-slide"><img src="./Liderança.svg" alt="livro Liderança"></div>
+    <div class="swiper-slide"><img src="./MEAN.svg" alt="livro MEAN"></div>
+    <div class="swiper-slide"><img src="./MetricasAgeis.svg" alt="livro Metricas Ageis"></div>
+    <div class="swiper-slide"><img src="./Nodejs.svg" alt="livro Node js"></div>
+    <div class="swiper-slide"><img src="./ReactNative.svg" alt="livro React native"></div>
+    <div class="swiper-slide"><img src="./Tuning.svg" alt="livro tuning"></div>
+    <div class="swiper-slide"><img src="./UX.svg" alt="livro UX"></div>
+
+  </div>
+  
+
+  <!-- If we need navigation buttons -->
+  <div class="swiper-button-prev"></div>
+  <div class="swiper-button-next"></div>
+
+  
+</div>
+ </section>
+
+
+ <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
+ <script>
+    const swiper = new Swiper('.swiper', {
+    spaceBetween: 10,
+    slidesPerView: 3,
+    pagination: {
+      el:'.swiper-pagination',
+      type: 'bullets',
+    }
+      });
+ </script>
+
+
+</body>
+</html>
